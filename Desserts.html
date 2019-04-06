@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#contact">Cart</a>
+  <a href="#home">Checkout</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Desserts
+    <i class="fa fa-caret-down"></i>
+  </button>
+  </div> 
+</div>
+
+<h1>Desserts</h1>
+
+<div class="column" style="background-color:White;">
+<h1> Ice creams</h1>
+    <h2> Vanilla
+  <input type="number" id="myNumber">
+ <h3>Rs 40</h3>
+  </h2>
+  </div>
+  <div class="column" style="background-color:White;">
+    <h2> <b> Chocolate </b>
+    <input type="number" id="myNumber">
+<h3>Rs 40</h3>
+    </h2>
+  </div>
+  <div class="column" style="background-color:White;">
+    <h2>Butter Scotch
+    <input type="number" id="myNumber">
+<h3> Rs 50</h3>
+    </h2>
+</div>
+<div class="column" style="background-color:White;">
+    <h2>Strawberry
+    <input type="number" id="myNumber">
+<h3> Rs 50</h3>
+    </h2>
+</div>
+<div class="column" style="background-color:White;">
+    <h2>Black Currant
+    <input type="number" id="myNumber">
+<h3> Rs 50</h3>
+    </h2>
+</div>
+<h1> Brownies  & Pastries</h1>
+  </div>
+  <div class="column" style="background-color:White;">
+    <h2>Chocolate Fantasy
+    <input type="number" id="myNumber">
+<h3>Rs 100</h3>
+    </h2>
+  </div>
+<div class="column" style="background-color:White;">
+    <h2>Choco Croissant
+    <input type="number" id="myNumber">
+<h3>Rs 100</h3>
+    </h2>
+  </div>
+<div class="column" style="background-color:White;">
+    <h2>Eggless Chocolate Brownie
+    <input type="number" id="myNumber">
+<h3>Rs 100</h3>
+    </h2>
+  </div>
+<div class="column" style="background-color:White;">
+    <h2>Hazelnut Brownie
+    <input type="number" id="myNumber">
+<h3>Rs 140</h3>
+    </h2>
+  </div>
+<div class="column" style="background-color:White;">
+    <h2> Redvelvet Brownie
+    <input type="number" id="myNumber">
+<h3>Rs 140</h3>
+    </h2>
+  </div>
+<div class="column" style="background-color:White;">
+    <h2>Blueberry Cheese Cake
+    <input type="number" id="myNumber">
+<h3>Rs 150</h3>
+    </h2>
+  </div>
+<h1> Indian Desserts</h1>
+<div class="column" style="background-color:White;">
+    <h2> Gulab Jamun(2 pieces)
+    <input type="number" id="myNumber">
+<h3>Rs 50</h3>
+    </h2>
+  </div>
+<div class="column" style="background-color:White;">
+    <h2> Gajar ka Halwa
+    <input type="number" id="myNumber">
+<h3>Rs 90</h3>
+    </h2>
+  </div>
+<div class="column" style="background-color:White;">
+    <h2> Rose Firni
+    <input type="number" id="myNumber">
+<h3>Rs 100</h3>
+    </h2>
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+// add/deleting item
+function myFunction() {
+  document.getElementById("myNumber");
+}
+</script>
+
+</body>
+</html>
