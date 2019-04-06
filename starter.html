@@ -66,35 +66,51 @@
   <a href="#home">Checkout</a>
   <div class="dropdown">
   <button class="dropbtn" onclick="myFunction()">Starter Menu
-    <i class="fa fa-caret-down"></i>
   </button>
-  <div class="dropdown-content" id="myDropdown">
-    <a href="#">Kebab</a>
-    <a href="#">Burger</a>
-    <a href="#">Gobi 65</a>
-  </div>
   </div> 
 </div>
 
-<h1>Desi Starters</h1>
+<h1>Indian Starters</h1>
+<h1>Veg Starter  </h1>
+<div class="column" style="background-color:White;">
+    <h2> Gobi 65
+<input type="number" id="myNumber" min="1" max="10">
+</h2>
+    <h4> &#8377 100 <h4>
+  </div>
+<div class="column" style="background-color:White;">
+    <h2> Paneer Tikka
+<input type="number" id="myNumber" min="1" max="10">
+</h2>
+    <h4> &#8377 150 <h4>
+  </div>
 
-<img src="https://www.englishclub.com/images/vocabulary/food/indian/indian-food-640.jpg" style="border: none; width: 100%;" alt="Indian Food"> 
+<h2>Non Veg Starter </h2>
+  <div class="column" style="background-color:White;">
+    <h2>Chicken 65
+  <input type="number" id="myNumber" min="0" max="10">
+  </h2>
+  </div>
+  <div class="column" style="background-color:White;">
+    <h1>Chicken Lolipop
+    <input type="number" id="myNumber" min="1" max="10">
+    </h1>
+  </div>
+  <div class="column" style="background-color:White;">
+    <h1>Pepper Chicken
+    <input type="number" id="myNumber" min="1" max="10">
+    </h1>
+  </div>
+
 
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+// add/deleting item
 function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("myNumber");
 }
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
+
 </script>
 </body>
 </html>
